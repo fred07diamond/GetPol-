@@ -1,4 +1,6 @@
-$(function() {
+/*global $*/ 
+/* global gapi*/ 
+
   var client_loaded = false;
   var address_string = "";
 
@@ -24,6 +26,7 @@ $(function() {
         levels: null,
         roles: null,
         resource: {}
+        
       })
       .then(
         function(response) {
@@ -90,12 +93,15 @@ $(function() {
     }
   });
   // $('#loadclient').click(loadClient);
-  $("#execute").click(function(e) {
+  $("form").submit(function(e) {
+    console.log("here");
     e.preventDefault();
     address_string += $("#form-address").val() + " ";
     address_string += $("#form-city").val() + " ";
     address_string += $("#form-state").val() + " ";
     address_string += $("#form-zip").val() + " ";
     execute();
+
   });
-});
+
+console.log("here2")
