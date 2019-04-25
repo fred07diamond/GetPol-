@@ -49,7 +49,7 @@
             response_string += '<img src="';
             response_string += officials[i].photoUrl
               ? officials[i].photoUrl
-              : "http://weclipart.com/gimg/23A2EDFA79A2ACFB/d2c2d56d3d11841dad53415e78524f89.jpg";
+              : "https://grid.gograph.com/politician-vector-clipart_gg65410022.jpg";
             response_string += '" />';
             response_string += "<h3>" + officials[i].name + "</h3>";
             response_string += "<h4>" + titles[i] + "</h4>";
